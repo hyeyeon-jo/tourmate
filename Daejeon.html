@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourMate - Daejeon</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs9iaIlNoA00AzEyhokHBY_-Ne8vGahnM&callback=initMap"></script>
+    <style>
+        .image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            max-width: 400px; 
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore Daejeon</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="busan.html">Busan</a></li>
+        <li><a href="daejeon.html">Daejeon</a></li>
+        <li><a href="jeju.html">Jeju</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Welcome to Daejeon</h2>
+    <p>As the largest city in Chungcheong Province, it is the largest science and research city in Korea and one of the world's leading science and research cities, with Daedeok R&D Special Zone (Daedeok Research Complex) and the International Science Business Belt being established..</p>
+    <div id="map" style="width:100%;height:400px;"></div>
+  </section>
+
+  <section>
+    <h2>Top Attractions in Daejeon</h2>
+    <div class="attractions">
+      <div class="attraction-item">
+        <h3>Sky Road</h3>
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20130907_57%2Fwjatns2001_1378499224980lq6Ez_JPEG%2F%25C0%25B8%25B4%25C9%25C1%25A4%25C0%25CC001.JPG&type=a340" alt="SkyRoad" class="image">
+        <p>Located in Daejeon City, the Sky Road was one of the city's landmarks, a walking trail with beautiful scenery. It is especially famous for being able to enjoy the fantastic night view at night.</p>
+      </div>
+      <div class="attraction-item">
+        <h3>Daedong Sky Park</h3>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/e1/38/57/daedong-sky-park.jpg?w=2400&h=-1&s=1" alt="Daedong Sky Park" class="image">
+        <p>The murals decorated all over the village and painted from house to house make it a wonderful photo zone, which is good for taking pictures and enjoying a walk.</p>
+      </div>
+      <div class="attraction-item">
+        <h3>Daejeon O-World</h3>
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MjFfMjI3%2FMDAxNjkyNjE4MDE5MTA1.ZFCMML0k8g6S8i6MqVuCdr0r18UvcBAEwrmX5iXDA6kg.eRs6eb80Yuyu-nCit6SoHO3ujWmKG_eyU9f-GTFGtHEg.JPEG.416gogoseong%2F20230814_152239.jpg&type=sc960_832" alt="Daejeon O-World" class="image">
+        <p>The name "Oh World" means a space where people feel and move the surprise and joy of the exclamation "Oh!" Over the past 20 years, children and teenagers in Daejeon and surrounding areas have made happy memories here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Daejeon's Best Local Dishes</h2>
+    <div class="food-section">
+      <div class="food-item">
+        <h3>"Sungsimdang". Bakery</h3>
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMjVfMTkg%2FMDAxNzA2MTgxNTgyOTc4.pX--jeUBOUfyDsd_XqwOc-JloItzWcd6in6zM2ls4lsg.QNSsx0QfTqOQaY1KJE-tkqA_2WPmomAu3il8c0f7HR0g.JPEG.tjbsbskbs%2F20240124%25A3%25DF192425.jpg&type=a340" alt="Sungsimdang. Bakery" class="image">
+        <p>Daejeon is famous for bread, especially this bakery is the most famous and delicious place in Daejeon.</p>
+      </div>
+      <div class="food-item">
+        <h3>tteokbokki</h3>
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAyMDRfMTgg%2FMDAxNzA3MDU2MTIzOTc0.pD4YXgK_TD_Xk56Rd5-sQkGlHYBgtsKTf1xIFt3aQlIg.Jjd8aCSHYeH-lbFqub8j9Zj785uw-8o9N0_pP1vOZ2sg.PNG.autumndays7%2Fimage.png&type=a340" alt="tteokbokki" class="image">
+        <p>There are a lot of famous tteokbokki restaurants, and the tteokbokki restaurant called "The Restaurant(바로그집)" is the most famous.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Travel Tips for Daejeon</h2>
+    <ul>
+      <li><strong>Best Time to Visit:</strong> Spring (April to June) and autumn (September to November) provide mild weather, making it suitable for outdoor activities because there are many markets and simple snacks.</li>
+      <li><strong>Transportation:</strong> Since there are not many subway stations, we recommend traveling by bus. The area is not that wide, making it suitable for traveling on foot.</li>
+      <li><strong>Festivals:</strong> Daejeon is famous for bread, so many tourists visit it in time for the bread festival.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Estimated Travel Costs</h2>
+    <p>Here's an estimate of the budget you might need for a 3-day trip to Daejeon:</p>
+    <ul>
+      <li><strong>Accommodation:</strong> ₩50,000 - ₩150,000 per night (budget to mid-range hotels)</li>
+      <li><strong>Food:</strong> ₩7,000 - ₩15,000 per meal at local restaurants</li>
+      <li><strong>Transportation:</strong> ₩1,300 per subway or bus ride; ₩10,000 - ₩20,000 for taxi fares within the city</li>
+      <li><strong>Attractions:</strong> ₩30,000 - ₩50,000 for entry fees to parks and cultural sites</li>
+      <li><strong>Total Estimated Daily Cost:</strong> ₩80,000 - ₩200,000 per person (depending on your preferences)</li>
+    </ul>
+    <p>Costs may vary depending on your travel style, but this gives you a rough idea of what to expect!</p>
+  </section>
+
+  <footer>
+    <p>© 2024 TourMate. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function initMap() {
+      var daegu = { lat: 35.8722, lng: 128.6025 };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: daegu
+      });
+      var marker = new google.maps.Marker({ position: daegu, map: map });
+    }
+  </script>
+</body>
+</html>
